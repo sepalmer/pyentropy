@@ -1,0 +1,38 @@
+running install
+running build
+running build_py
+not copying pyentropy/systems.py (output up-to-date)
+not copying pyentropy/__init__.py (output up-to-date)
+not copying pyentropy/utils.py (output up-to-date)
+not copying pyentropy/maxent.py (output up-to-date)
+not copying pyentropy/tests/test_systems.py (output up-to-date)
+not copying pyentropy/tests/test_utils.py (output up-to-date)
+not copying pyentropy/tests/test_maxent.py (output up-to-date)
+not copying pyentropy/tests/__init__.py (output up-to-date)
+not copying pyentropy/statk/__init__.py (output up-to-date)
+running build_ext
+new_compiler returns <class 'distutils.unixccompiler.UnixCCompiler'>
+skipping 'statk.wrap' extension (up-to-date)
+running install_lib
+not copying build/lib.macosx-10.7-x86_64-3.6/pyentropy/systems.py (output up-to-date)
+not copying build/lib.macosx-10.7-x86_64-3.6/pyentropy/tests/test_systems.py (output up-to-date)
+not copying build/lib.macosx-10.7-x86_64-3.6/pyentropy/tests/test_utils.py (output up-to-date)
+not copying build/lib.macosx-10.7-x86_64-3.6/pyentropy/tests/test_maxent.py (output up-to-date)
+not copying build/lib.macosx-10.7-x86_64-3.6/pyentropy/tests/__init__.py (output up-to-date)
+not copying build/lib.macosx-10.7-x86_64-3.6/pyentropy/__init__.py (output up-to-date)
+not copying build/lib.macosx-10.7-x86_64-3.6/pyentropy/statk/__init__.py (output up-to-date)
+copying build/lib.macosx-10.7-x86_64-3.6/pyentropy/statk/wrap.cpython-36m-darwin.so -> /anaconda3/lib/python3.6/site-packages/pyentropy/statk
+not copying build/lib.macosx-10.7-x86_64-3.6/pyentropy/utils.py (output up-to-date)
+not copying build/lib.macosx-10.7-x86_64-3.6/pyentropy/maxent.py (output up-to-date)
+skipping byte-compilation of /anaconda3/lib/python3.6/site-packages/pyentropy/systems.py to systems.cpython-36.pyc
+skipping byte-compilation of /anaconda3/lib/python3.6/site-packages/pyentropy/tests/test_systems.py to test_systems.cpython-36.pyc
+skipping byte-compilation of /anaconda3/lib/python3.6/site-packages/pyentropy/tests/test_utils.py to test_utils.cpython-36.pyc
+skipping byte-compilation of /anaconda3/lib/python3.6/site-packages/pyentropy/tests/test_maxent.py to test_maxent.cpython-36.pyc
+skipping byte-compilation of /anaconda3/lib/python3.6/site-packages/pyentropy/tests/__init__.py to __init__.cpython-36.pyc
+skipping byte-compilation of /anaconda3/lib/python3.6/site-packages/pyentropy/__init__.py to __init__.cpython-36.pyc
+skipping byte-compilation of /anaconda3/lib/python3.6/site-packages/pyentropy/statk/__init__.py to __init__.cpython-36.pyc
+skipping byte-compilation of /anaconda3/lib/python3.6/site-packages/pyentropy/utils.py to utils.cpython-36.pyc
+skipping byte-compilation of /anaconda3/lib/python3.6/site-packages/pyentropy/maxent.py to maxent.cpython-36.pyc
+running install_egg_info
+Removing /anaconda3/lib/python3.6/site-packages/pyentropy-0.5.0dev-py3.6.egg-info
+Writing /anaconda3/lib/python3.6/site-packages/pyentropy-0.5.0dev-py3.6.egg-info

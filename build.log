@@ -1,0 +1,384 @@
+running build
+running build_py
+creating build
+creating build/lib.macosx-10.7-x86_64-3.6
+creating build/lib.macosx-10.7-x86_64-3.6/pyentropy
+copying pyentropy/systems.py -> build/lib.macosx-10.7-x86_64-3.6/pyentropy
+copying pyentropy/__init__.py -> build/lib.macosx-10.7-x86_64-3.6/pyentropy
+copying pyentropy/utils.py -> build/lib.macosx-10.7-x86_64-3.6/pyentropy
+copying pyentropy/maxent.py -> build/lib.macosx-10.7-x86_64-3.6/pyentropy
+creating build/lib.macosx-10.7-x86_64-3.6/pyentropy/tests
+copying pyentropy/tests/test_systems.py -> build/lib.macosx-10.7-x86_64-3.6/pyentropy/tests
+copying pyentropy/tests/test_utils.py -> build/lib.macosx-10.7-x86_64-3.6/pyentropy/tests
+copying pyentropy/tests/test_maxent.py -> build/lib.macosx-10.7-x86_64-3.6/pyentropy/tests
+copying pyentropy/tests/__init__.py -> build/lib.macosx-10.7-x86_64-3.6/pyentropy/tests
+creating build/lib.macosx-10.7-x86_64-3.6/pyentropy/statk
+copying pyentropy/statk/__init__.py -> build/lib.macosx-10.7-x86_64-3.6/pyentropy/statk
+running build_ext
+new_compiler returns <class 'distutils.unixccompiler.UnixCCompiler'>
+building 'statk.wrap' extension
+C compiler: gcc -Wno-unused-result -Wsign-compare -Wunreachable-code -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -I/anaconda3/include -arch x86_64 -I/anaconda3/include -arch x86_64
+
+creating build/temp.macosx-10.7-x86_64-3.6
+creating build/temp.macosx-10.7-x86_64-3.6/pyentropy
+creating build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk
+compile options: '-DNUMERIC=0 -DPYGSL_GSL_MAJOR_VERSION=2 -DPYGSL_GSL_MINOR_VERSION=5 -UNDEBUG -I/opt/local/include -IInclude -I. -I/anaconda3/lib/python3.6/site-packages/numpy/core/include -I/anaconda3/include/python3.6m -c'
+gcc: pyentropy/statk/hist_c.c
+exec_command(['gcc', '-Wno-unused-result', '-Wsign-compare', '-Wunreachable-code', '-DNDEBUG', '-g', '-fwrapv', '-O3', '-Wall', '-Wstrict-prototypes', '-I/anaconda3/include', '-arch', 'x86_64', '-I/anaconda3/include', '-arch', 'x86_64', '-DNUMERIC=0', '-DPYGSL_GSL_MAJOR_VERSION=2', '-DPYGSL_GSL_MINOR_VERSION=5', '-UNDEBUG', '-I/opt/local/include', '-IInclude', '-I.', '-I/anaconda3/lib/python3.6/site-packages/numpy/core/include', '-I/anaconda3/include/python3.6m', '-c', 'pyentropy/statk/hist_c.c', '-o', 'build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/hist_c.o'],)
+Retaining cwd: /Users/sepalmer/pyentropy
+_preserve_environment([])
+_update_environment(...)
+In file included from pyentropy/statk/hist_c.c:10:
+In file included from pyentropy/statk/toolkit_c.h:26:
+pyentropy/statk/entropy_c.h:91:62: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern int variance_jack(struct hist1d *in,int (*entropy_fun)(),struct options_entropy *opts,struct nv_pair *variance);
+                                                             ^
+                                                              void
+pyentropy/statk/entropy_c.h:92:62: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern int variance_boot(struct hist1d *in,int (*entropy_fun)(),struct options_entropy *opts,struct nv_pair *variance);
+                                                             ^
+                                                              void
+pyentropy/statk/entropy_c.h:95:28: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern char* getEstMethList(); /**< used by jni toolkit */
+                           ^
+                            void
+3 warnings generated.
+_update_environment(...)
+gcc: pyentropy/statk/sort_c.c
+exec_command(['gcc', '-Wno-unused-result', '-Wsign-compare', '-Wunreachable-code', '-DNDEBUG', '-g', '-fwrapv', '-O3', '-Wall', '-Wstrict-prototypes', '-I/anaconda3/include', '-arch', 'x86_64', '-I/anaconda3/include', '-arch', 'x86_64', '-DNUMERIC=0', '-DPYGSL_GSL_MAJOR_VERSION=2', '-DPYGSL_GSL_MINOR_VERSION=5', '-UNDEBUG', '-I/opt/local/include', '-IInclude', '-I.', '-I/anaconda3/lib/python3.6/site-packages/numpy/core/include', '-I/anaconda3/include/python3.6m', '-c', 'pyentropy/statk/sort_c.c', '-o', 'build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/sort_c.o'],)
+Retaining cwd: /Users/sepalmer/pyentropy
+_preserve_environment([])
+_update_environment(...)
+In file included from pyentropy/statk/sort_c.c:15:
+In file included from pyentropy/statk/toolkit_c.h:26:
+pyentropy/statk/entropy_c.h:91:62: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern int variance_jack(struct hist1d *in,int (*entropy_fun)(),struct options_entropy *opts,struct nv_pair *variance);
+                                                             ^
+                                                              void
+pyentropy/statk/entropy_c.h:92:62: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern int variance_boot(struct hist1d *in,int (*entropy_fun)(),struct options_entropy *opts,struct nv_pair *variance);
+                                                             ^
+                                                              void
+pyentropy/statk/entropy_c.h:95:28: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern char* getEstMethList(); /**< used by jni toolkit */
+                           ^
+                            void
+3 warnings generated.
+_update_environment(...)
+gcc: pyentropy/statk/gen_c.c
+exec_command(['gcc', '-Wno-unused-result', '-Wsign-compare', '-Wunreachable-code', '-DNDEBUG', '-g', '-fwrapv', '-O3', '-Wall', '-Wstrict-prototypes', '-I/anaconda3/include', '-arch', 'x86_64', '-I/anaconda3/include', '-arch', 'x86_64', '-DNUMERIC=0', '-DPYGSL_GSL_MAJOR_VERSION=2', '-DPYGSL_GSL_MINOR_VERSION=5', '-UNDEBUG', '-I/opt/local/include', '-IInclude', '-I.', '-I/anaconda3/lib/python3.6/site-packages/numpy/core/include', '-I/anaconda3/include/python3.6m', '-c', 'pyentropy/statk/gen_c.c', '-o', 'build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/gen_c.o'],)
+Retaining cwd: /Users/sepalmer/pyentropy
+_preserve_environment([])
+_update_environment(...)
+In file included from pyentropy/statk/gen_c.c:9:
+In file included from pyentropy/statk/toolkit_c.h:26:
+pyentropy/statk/entropy_c.h:91:62: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern int variance_jack(struct hist1d *in,int (*entropy_fun)(),struct options_entropy *opts,struct nv_pair *variance);
+                                                             ^
+                                                              void
+pyentropy/statk/entropy_c.h:92:62: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern int variance_boot(struct hist1d *in,int (*entropy_fun)(),struct options_entropy *opts,struct nv_pair *variance);
+                                                             ^
+                                                              void
+pyentropy/statk/entropy_c.h:95:28: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern char* getEstMethList(); /**< used by jni toolkit */
+                           ^
+                            void
+3 warnings generated.
+_update_environment(...)
+gcc: pyentropy/statk/entropy_c.c
+exec_command(['gcc', '-Wno-unused-result', '-Wsign-compare', '-Wunreachable-code', '-DNDEBUG', '-g', '-fwrapv', '-O3', '-Wall', '-Wstrict-prototypes', '-I/anaconda3/include', '-arch', 'x86_64', '-I/anaconda3/include', '-arch', 'x86_64', '-DNUMERIC=0', '-DPYGSL_GSL_MAJOR_VERSION=2', '-DPYGSL_GSL_MINOR_VERSION=5', '-UNDEBUG', '-I/opt/local/include', '-IInclude', '-I.', '-I/anaconda3/lib/python3.6/site-packages/numpy/core/include', '-I/anaconda3/include/python3.6m', '-c', 'pyentropy/statk/entropy_c.c', '-o', 'build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/entropy_c.o'],)
+Retaining cwd: /Users/sepalmer/pyentropy
+_preserve_environment([])
+_update_environment(...)
+In file included from pyentropy/statk/entropy_c.c:10:
+In file included from pyentropy/statk/toolkit_c.h:26:
+pyentropy/statk/entropy_c.h:91:62: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern int variance_jack(struct hist1d *in,int (*entropy_fun)(),struct options_entropy *opts,struct nv_pair *variance);
+                                                             ^
+                                                              void
+pyentropy/statk/entropy_c.h:92:62: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern int variance_boot(struct hist1d *in,int (*entropy_fun)(),struct options_entropy *opts,struct nv_pair *variance);
+                                                             ^
+                                                              void
+pyentropy/statk/entropy_c.h:95:28: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern char* getEstMethList(); /**< used by jni toolkit */
+                           ^
+                            void
+3 warnings generated.
+_update_environment(...)
+gcc: pyentropy/statk/entropy_nsb_c.cpp
+exec_command(['gcc', '-Wno-unused-result', '-Wsign-compare', '-Wunreachable-code', '-DNDEBUG', '-g', '-fwrapv', '-O3', '-Wall', '-Wstrict-prototypes', '-I/anaconda3/include', '-arch', 'x86_64', '-I/anaconda3/include', '-arch', 'x86_64', '-DNUMERIC=0', '-DPYGSL_GSL_MAJOR_VERSION=2', '-DPYGSL_GSL_MINOR_VERSION=5', '-UNDEBUG', '-I/opt/local/include', '-IInclude', '-I.', '-I/anaconda3/lib/python3.6/site-packages/numpy/core/include', '-I/anaconda3/include/python3.6m', '-c', 'pyentropy/statk/entropy_nsb_c.cpp', '-o', 'build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/entropy_nsb_c.o'],)
+Retaining cwd: /Users/sepalmer/pyentropy
+_preserve_environment([])
+_update_environment(...)
+pyentropy/statk/entropy_nsb_c.cpp:1071:65: warning: field 'size_nxng1' will be initialized after field 'nx' [-Wreorder]
+                        N(samples), K(cardinality), K1(0.0), K2(0.0), size_nx(size), size_nxng1(0), nx(p_nx), kx(p_kx), nxng1(NULL), kxng1(NULL), maximum_entropy(log(K)), precision_error(precision), find_var(var_flag), p_splines(NULL), Snsb(0.0), vSnsb(0.0), Scl(0.0), Sas(0.0), dSas(0.0), Bcl(0.0), xicl(0.0), dxicl(0.0), mlog(0.0), warncode(NSB_OK)
+                                                                                     ^
+pyentropy/statk/entropy_nsb_c.cpp:1071:179: warning: field 'find_var' will be initialized after field 'p_splines' [-Wreorder]
+                        N(samples), K(cardinality), K1(0.0), K2(0.0), size_nx(size), size_nxng1(0), nx(p_nx), kx(p_kx), nxng1(NULL), kxng1(NULL), maximum_entropy(log(K)), precision_error(precision), find_var(var_flag), p_splines(NULL), Snsb(0.0), vSnsb(0.0), Scl(0.0), Sas(0.0), dSas(0.0), Bcl(0.0), xicl(0.0), dxicl(0.0), mlog(0.0), warncode(NSB_OK)
+                                                                                                                                                                                                       ^
+2 warnings generated.
+_update_environment(...)
+gcc: pyentropy/statk/entropy_bub_c.c
+exec_command(['gcc', '-Wno-unused-result', '-Wsign-compare', '-Wunreachable-code', '-DNDEBUG', '-g', '-fwrapv', '-O3', '-Wall', '-Wstrict-prototypes', '-I/anaconda3/include', '-arch', 'x86_64', '-I/anaconda3/include', '-arch', 'x86_64', '-DNUMERIC=0', '-DPYGSL_GSL_MAJOR_VERSION=2', '-DPYGSL_GSL_MINOR_VERSION=5', '-UNDEBUG', '-I/opt/local/include', '-IInclude', '-I.', '-I/anaconda3/lib/python3.6/site-packages/numpy/core/include', '-I/anaconda3/include/python3.6m', '-c', 'pyentropy/statk/entropy_bub_c.c', '-o', 'build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/entropy_bub_c.o'],)
+Retaining cwd: /Users/sepalmer/pyentropy
+_preserve_environment([])
+_update_environment(...)
+In file included from pyentropy/statk/entropy_bub_c.c:15:
+In file included from pyentropy/statk/toolkit_c.h:26:
+pyentropy/statk/entropy_c.h:91:62: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern int variance_jack(struct hist1d *in,int (*entropy_fun)(),struct options_entropy *opts,struct nv_pair *variance);
+                                                             ^
+                                                              void
+pyentropy/statk/entropy_c.h:92:62: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern int variance_boot(struct hist1d *in,int (*entropy_fun)(),struct options_entropy *opts,struct nv_pair *variance);
+                                                             ^
+                                                              void
+pyentropy/statk/entropy_c.h:95:28: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern char* getEstMethList(); /**< used by jni toolkit */
+                           ^
+                            void
+pyentropy/statk/entropy_bub_c.c:45:12: warning: unused variable 'max_bin' [-Wunused-variable]
+        int N,i,j,max_bin;
+                  ^
+pyentropy/statk/entropy_bub_c.c:148:7: warning: unused variable 'signum' [-Wunused-variable]
+        int *signum;
+             ^
+pyentropy/statk/entropy_bub_c.c:146:25: warning: unused variable 'norm' [-Wunused-variable]
+        gsl_vector *b,*x,*tau,*norm,*S,*work;
+                               ^
+pyentropy/statk/entropy_bub_c.c:146:20: warning: unused variable 'tau' [-Wunused-variable]
+        gsl_vector *b,*x,*tau,*norm,*S,*work;
+                          ^
+pyentropy/statk/entropy_bub_c.c:233:20: warning: unused variable 'tau' [-Wunused-variable]
+        gsl_vector *b,*x,*tau,*norm,*S,*work;
+                          ^
+pyentropy/statk/entropy_bub_c.c:233:25: warning: unused variable 'norm' [-Wunused-variable]
+        gsl_vector *b,*x,*tau,*norm,*S,*work;
+                               ^
+pyentropy/statk/entropy_bub_c.c:357:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+10 warnings generated.
+_update_environment(...)
+gcc: pyentropy/statk/wrap.c
+exec_command(['gcc', '-Wno-unused-result', '-Wsign-compare', '-Wunreachable-code', '-DNDEBUG', '-g', '-fwrapv', '-O3', '-Wall', '-Wstrict-prototypes', '-I/anaconda3/include', '-arch', 'x86_64', '-I/anaconda3/include', '-arch', 'x86_64', '-DNUMERIC=0', '-DPYGSL_GSL_MAJOR_VERSION=2', '-DPYGSL_GSL_MINOR_VERSION=5', '-UNDEBUG', '-I/opt/local/include', '-IInclude', '-I.', '-I/anaconda3/lib/python3.6/site-packages/numpy/core/include', '-I/anaconda3/include/python3.6m', '-c', 'pyentropy/statk/wrap.c', '-o', 'build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/wrap.o'],)
+Retaining cwd: /Users/sepalmer/pyentropy
+_preserve_environment([])
+_update_environment(...)
+In file included from pyentropy/statk/wrap.c:237:
+In file included from /anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/arrayobject.h:4:
+In file included from /anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/ndarrayobject.h:18:
+In file included from /anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/ndarraytypes.h:1816:
+/anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/npy_1_7_deprecated_api.h:15:2: warning: "Using deprecated NumPy API, disable it by "          "#defining NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION" [-W#warnings]
+#warning "Using deprecated NumPy API, disable it by " \
+ ^
+In file included from pyentropy/statk/wrap.c:240:
+In file included from pyentropy/statk/toolkit_c.h:26:
+pyentropy/statk/entropy_c.h:91:62: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern int variance_jack(struct hist1d *in,int (*entropy_fun)(),struct options_entropy *opts,struct nv_pair *variance);
+                                                             ^
+                                                              void
+pyentropy/statk/entropy_c.h:92:62: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern int variance_boot(struct hist1d *in,int (*entropy_fun)(),struct options_entropy *opts,struct nv_pair *variance);
+                                                             ^
+                                                              void
+pyentropy/statk/entropy_c.h:95:28: warning: this function declaration is not a prototype [-Wstrict-prototypes]
+extern char* getEstMethList(); /**< used by jni toolkit */
+                           ^
+                            void
+pyentropy/statk/wrap.c:1148:14: warning: explicitly assigning value of variable of type 'PyObject *' (aka 'struct _object *') to itself [-Wself-assign]
+  __pyx_self = __pyx_self;
+  ~~~~~~~~~~ ^ ~~~~~~~~~~
+pyentropy/statk/wrap.c:2085:5: warning: code will never be executed [-Wunreachable-code]
+    goto __pyx_L18;
+    ^~~~~~~~~~~~~~
+pyentropy/statk/wrap.c:1377:5: warning: code will never be executed [-Wunreachable-code]
+    goto __pyx_L7;
+    ^~~~~~~~~~~~~
+pyentropy/statk/wrap.c:1278:5: warning: code will never be executed [-Wunreachable-code]
+    goto __pyx_L6;
+    ^~~~~~~~~~~~~
+pyentropy/statk/wrap.c:2210:14: warning: explicitly assigning value of variable of type 'PyObject *' (aka 'struct _object *') to itself [-Wself-assign]
+  __pyx_self = __pyx_self;
+  ~~~~~~~~~~ ^ ~~~~~~~~~~
+pyentropy/statk/wrap.c:3278:5: warning: code will never be executed [-Wunreachable-code]
+    goto __pyx_L20;
+    ^~~~~~~~~~~~~~
+pyentropy/statk/wrap.c:2572:5: warning: code will never be executed [-Wunreachable-code]
+    goto __pyx_L10;
+    ^~~~~~~~~~~~~~
+pyentropy/statk/wrap.c:2536:5: warning: code will never be executed [-Wunreachable-code]
+    goto __pyx_L9;
+    ^~~~~~~~~~~~~
+pyentropy/statk/wrap.c:2486:5: warning: code will never be executed [-Wunreachable-code]
+    goto __pyx_L8;
+    ^~~~~~~~~~~~~
+pyentropy/statk/wrap.c:2457:5: warning: code will never be executed [-Wunreachable-code]
+    goto __pyx_L7;
+    ^~~~~~~~~~~~~
+pyentropy/statk/wrap.c:2358:5: warning: code will never be executed [-Wunreachable-code]
+    goto __pyx_L6;
+    ^~~~~~~~~~~~~
+pyentropy/statk/wrap.c:4059:5: warning: code will never be executed [-Wunreachable-code]
+    goto __pyx_L13;
+    ^~~~~~~~~~~~~~
+pyentropy/statk/wrap.c:3789:7: warning: code will never be executed [-Wunreachable-code]
+      goto __pyx_L14;
+      ^~~~~~~~~~~~~~
+pyentropy/statk/wrap.c:3519:5: warning: code will never be executed [-Wunreachable-code]
+    goto __pyx_L8;
+    ^~~~~~~~~~~~~
+pyentropy/statk/wrap.c:3479:5: warning: code will never be executed [-Wunreachable-code]
+    goto __pyx_L7;
+    ^~~~~~~~~~~~~
+pyentropy/statk/wrap.c:3379:5: warning: code will never be executed [-Wunreachable-code]
+    goto __pyx_L5;
+    ^~~~~~~~~~~~~
+pyentropy/statk/wrap.c:5110:13: warning: code will never be executed [-Wunreachable-code]
+  __pyx_r = 0;
+            ^
+pyentropy/statk/wrap.c:4717:9: warning: code will never be executed [-Wunreachable-code]
+        goto __pyx_L10;
+        ^~~~~~~~~~~~~~
+pyentropy/statk/wrap.c:4612:7: warning: code will never be executed [-Wunreachable-code]
+      goto __pyx_L6;
+      ^~~~~~~~~~~~~
+pyentropy/statk/wrap.c:4561:7: warning: code will never be executed [-Wunreachable-code]
+      goto __pyx_L5;
+      ^~~~~~~~~~~~~
+pyentropy/statk/wrap.c:5241:5: warning: code will never be executed [-Wunreachable-code]
+    goto __pyx_L3;
+    ^~~~~~~~~~~~~
+In file included from pyentropy/statk/wrap.c:237:
+In file included from /anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/arrayobject.h:4:
+In file included from /anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/ndarrayobject.h:27:
+/anaconda3/lib/python3.6/site-packages/numpy/core/include/numpy/__multiarray_api.h:1463:1: warning: unused function '_import_array' [-Wunused-function]
+_import_array(void)
+^
+pyentropy/statk/wrap.c:7583:33: warning: unused function '__Pyx_PyIndex_AsSsize_t' [-Wunused-function]
+static CYTHON_INLINE Py_ssize_t __Pyx_PyIndex_AsSsize_t(PyObject* b) {
+                                ^
+pyentropy/statk/wrap.c:7592:33: warning: unused function '__Pyx_PyInt_FromSize_t' [-Wunused-function]
+static CYTHON_INLINE PyObject * __Pyx_PyInt_FromSize_t(size_t ival) {
+                                ^
+pyentropy/statk/wrap.c:7606:29: warning: unused function '__Pyx_PyInt_AsSize_t' [-Wunused-function]
+static CYTHON_INLINE size_t __Pyx_PyInt_AsSize_t(PyObject* x) {
+                            ^
+pyentropy/statk/wrap.c:6701:48: warning: unused function '__pyx_t_float_complex_from_parts' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_float_complex __pyx_t_float_complex_from_parts(float x, float y) {
+                                               ^
+pyentropy/statk/wrap.c:6711:30: warning: unused function '__Pyx_c_eqf' [-Wunused-function]
+    static CYTHON_INLINE int __Pyx_c_eqf(__pyx_t_float_complex a, __pyx_t_float_complex b) {
+                             ^
+pyentropy/statk/wrap.c:6714:48: warning: unused function '__Pyx_c_sumf' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_float_complex __Pyx_c_sumf(__pyx_t_float_complex a, __pyx_t_float_complex b) {
+                                               ^
+pyentropy/statk/wrap.c:6720:48: warning: unused function '__Pyx_c_difff' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_float_complex __Pyx_c_difff(__pyx_t_float_complex a, __pyx_t_float_complex b) {
+                                               ^
+pyentropy/statk/wrap.c:6732:48: warning: unused function '__Pyx_c_quotf' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_float_complex __Pyx_c_quotf(__pyx_t_float_complex a, __pyx_t_float_complex b) {
+                                               ^
+pyentropy/statk/wrap.c:6739:48: warning: unused function '__Pyx_c_negf' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_float_complex __Pyx_c_negf(__pyx_t_float_complex a) {
+                                               ^
+pyentropy/statk/wrap.c:6745:30: warning: unused function '__Pyx_c_is_zerof' [-Wunused-function]
+    static CYTHON_INLINE int __Pyx_c_is_zerof(__pyx_t_float_complex a) {
+                             ^
+pyentropy/statk/wrap.c:6748:48: warning: unused function '__Pyx_c_conjf' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_float_complex __Pyx_c_conjf(__pyx_t_float_complex a) {
+                                               ^
+pyentropy/statk/wrap.c:6762:52: warning: unused function '__Pyx_c_powf' [-Wunused-function]
+        static CYTHON_INLINE __pyx_t_float_complex __Pyx_c_powf(__pyx_t_float_complex a, __pyx_t_float_complex b) {
+                                                   ^
+pyentropy/statk/wrap.c:6821:49: warning: unused function '__pyx_t_double_complex_from_parts' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_double_complex __pyx_t_double_complex_from_parts(double x, double y) {
+                                                ^
+pyentropy/statk/wrap.c:6831:30: warning: unused function '__Pyx_c_eq' [-Wunused-function]
+    static CYTHON_INLINE int __Pyx_c_eq(__pyx_t_double_complex a, __pyx_t_double_complex b) {
+                             ^
+pyentropy/statk/wrap.c:6834:49: warning: unused function '__Pyx_c_sum' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_double_complex __Pyx_c_sum(__pyx_t_double_complex a, __pyx_t_double_complex b) {
+                                                ^
+pyentropy/statk/wrap.c:6840:49: warning: unused function '__Pyx_c_diff' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_double_complex __Pyx_c_diff(__pyx_t_double_complex a, __pyx_t_double_complex b) {
+                                                ^
+pyentropy/statk/wrap.c:6852:49: warning: unused function '__Pyx_c_quot' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_double_complex __Pyx_c_quot(__pyx_t_double_complex a, __pyx_t_double_complex b) {
+                                                ^
+pyentropy/statk/wrap.c:6859:49: warning: unused function '__Pyx_c_neg' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_double_complex __Pyx_c_neg(__pyx_t_double_complex a) {
+                                                ^
+pyentropy/statk/wrap.c:6865:30: warning: unused function '__Pyx_c_is_zero' [-Wunused-function]
+    static CYTHON_INLINE int __Pyx_c_is_zero(__pyx_t_double_complex a) {
+                             ^
+pyentropy/statk/wrap.c:6868:49: warning: unused function '__Pyx_c_conj' [-Wunused-function]
+    static CYTHON_INLINE __pyx_t_double_complex __Pyx_c_conj(__pyx_t_double_complex a) {
+                                                ^
+pyentropy/statk/wrap.c:6882:53: warning: unused function '__Pyx_c_pow' [-Wunused-function]
+        static CYTHON_INLINE __pyx_t_double_complex __Pyx_c_pow(__pyx_t_double_complex a, __pyx_t_double_complex b) {
+                                                    ^
+pyentropy/statk/wrap.c:6930:36: warning: unused function '__Pyx_PyInt_AsUnsignedChar' [-Wunused-function]
+static CYTHON_INLINE unsigned char __Pyx_PyInt_AsUnsignedChar(PyObject* x) {
+                                   ^
+pyentropy/statk/wrap.c:6949:37: warning: unused function '__Pyx_PyInt_AsUnsignedShort' [-Wunused-function]
+static CYTHON_INLINE unsigned short __Pyx_PyInt_AsUnsignedShort(PyObject* x) {
+                                    ^
+pyentropy/statk/wrap.c:6968:35: warning: unused function '__Pyx_PyInt_AsUnsignedInt' [-Wunused-function]
+static CYTHON_INLINE unsigned int __Pyx_PyInt_AsUnsignedInt(PyObject* x) {
+                                  ^
+pyentropy/statk/wrap.c:6987:27: warning: unused function '__Pyx_PyInt_AsChar' [-Wunused-function]
+static CYTHON_INLINE char __Pyx_PyInt_AsChar(PyObject* x) {
+                          ^
+pyentropy/statk/wrap.c:7006:28: warning: unused function '__Pyx_PyInt_AsShort' [-Wunused-function]
+static CYTHON_INLINE short __Pyx_PyInt_AsShort(PyObject* x) {
+                           ^
+pyentropy/statk/wrap.c:7044:34: warning: unused function '__Pyx_PyInt_AsSignedChar' [-Wunused-function]
+static CYTHON_INLINE signed char __Pyx_PyInt_AsSignedChar(PyObject* x) {
+                                 ^
+pyentropy/statk/wrap.c:7063:35: warning: unused function '__Pyx_PyInt_AsSignedShort' [-Wunused-function]
+static CYTHON_INLINE signed short __Pyx_PyInt_AsSignedShort(PyObject* x) {
+                                  ^
+pyentropy/statk/wrap.c:7082:33: warning: unused function '__Pyx_PyInt_AsSignedInt' [-Wunused-function]
+static CYTHON_INLINE signed int __Pyx_PyInt_AsSignedInt(PyObject* x) {
+                                ^
+pyentropy/statk/wrap.c:7101:26: warning: unused function '__Pyx_PyInt_AsLongDouble' [-Wunused-function]
+static CYTHON_INLINE int __Pyx_PyInt_AsLongDouble(PyObject* x) {
+                         ^
+pyentropy/statk/wrap.c:7225:35: warning: function '__Pyx_PyInt_AsLongLong' is not needed and will not be emitted [-Wunneeded-internal-declaration]
+static CYTHON_INLINE PY_LONG_LONG __Pyx_PyInt_AsLongLong(PyObject* x) {
+                                  ^
+pyentropy/statk/wrap.c:7295:42: warning: function '__Pyx_PyInt_AsSignedLongLong' is not needed and will not be emitted [-Wunneeded-internal-declaration]
+static CYTHON_INLINE signed PY_LONG_LONG __Pyx_PyInt_AsSignedLongLong(PyObject* x) {
+                                         ^
+pyentropy/statk/wrap.c:4203:32: warning: unused function '__pyx_f_5numpy_PyArray_MultiIterNew1' [-Wunused-function]
+static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__pyx_v_a) {
+                               ^
+pyentropy/statk/wrap.c:4246:32: warning: unused function '__pyx_f_5numpy_PyArray_MultiIterNew2' [-Wunused-function]
+static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__pyx_v_a, PyObject *__pyx_v_b) {
+                               ^
+pyentropy/statk/wrap.c:4289:32: warning: unused function '__pyx_f_5numpy_PyArray_MultiIterNew3' [-Wunused-function]
+static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__pyx_v_a, PyObject *__pyx_v_b, PyObject *__pyx_v_c) {
+                               ^
+pyentropy/statk/wrap.c:4332:32: warning: unused function '__pyx_f_5numpy_PyArray_MultiIterNew4' [-Wunused-function]
+static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__pyx_v_a, PyObject *__pyx_v_b, PyObject *__pyx_v_c, PyObject *__pyx_v_d) {
+                               ^
+pyentropy/statk/wrap.c:4375:32: warning: unused function '__pyx_f_5numpy_PyArray_MultiIterNew5' [-Wunused-function]
+static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__pyx_v_a, PyObject *__pyx_v_b, PyObject *__pyx_v_c, PyObject *__pyx_v_d, PyObject *__pyx_v_e) {
+                               ^
+pyentropy/statk/wrap.c:5137:27: warning: unused function '__pyx_f_5numpy_set_array_base' [-Wunused-function]
+static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_arr, PyObject *__pyx_v_base) {
+                          ^
+pyentropy/statk/wrap.c:5214:32: warning: unused function '__pyx_f_5numpy_get_array_base' [-Wunused-function]
+static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__pyx_v_arr) {
+                               ^
+65 warnings generated.
+_update_environment(...)
+g++ -bundle -undefined dynamic_lookup -L/anaconda3/lib -arch x86_64 -L/anaconda3/lib -arch x86_64 -arch x86_64 build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/hist_c.o build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/sort_c.o build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/gen_c.o build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/entropy_c.o build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/entropy_nsb_c.o build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/entropy_bub_c.o build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/wrap.o -L/opt/local/lib -lgsl -lgslcblas -o build/lib.macosx-10.7-x86_64-3.6/pyentropy/statk/wrap.cpython-36m-darwin.so
+exec_command(['g++', '-bundle', '-undefined', 'dynamic_lookup', '-L/anaconda3/lib', '-arch', 'x86_64', '-L/anaconda3/lib', '-arch', 'x86_64', '-arch', 'x86_64', 'build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/hist_c.o', 'build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/sort_c.o', 'build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/gen_c.o', 'build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/entropy_c.o', 'build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/entropy_nsb_c.o', 'build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/entropy_bub_c.o', 'build/temp.macosx-10.7-x86_64-3.6/pyentropy/statk/wrap.o', '-L/opt/local/lib', '-lgsl', '-lgslcblas', '-o', 'build/lib.macosx-10.7-x86_64-3.6/pyentropy/statk/wrap.cpython-36m-darwin.so'],)
+Retaining cwd: /Users/sepalmer/pyentropy
+_preserve_environment([])
+_update_environment(...)
+_update_environment(...)
